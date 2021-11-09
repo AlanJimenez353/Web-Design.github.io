@@ -354,12 +354,10 @@ h1{
   .button.secondary a:hover{
     color: #ddd;
   }
-  
-
 }
 
-@media screen and (max-width: 768px) {
-/*-----------------Imagenes item centrales     NO FUNCIONA , TIENE QUE FUNCIONAR-----------*/
+@media screen and (max-width: 1120px) {
+/*-----------------Imagenes item centrales-----------*/
 
 #item-Central-1 img,
 #item-Central-2 img,
@@ -396,7 +394,7 @@ h2{
 
   #item-Aside-Izquierdo img,
   #item-Aside-Derecho img {
-    height: 300px;
+    height: 350px;
     width: 120px;
     max-height: 100%;
     max-width: 100%;
@@ -454,11 +452,20 @@ h2{
   h2{
     top: 24px;
   }
-
-
 }
 
+@media screen and (max-width: 400px)
+{
 
+  #item-Aside-Izquierdo img,
+  #item-Aside-Derecho img {
+    height: 300px;
+    width: 120px;
+    max-height: 100%;
+    max-width: 100%;
+    
+  }
+}
 
 
 
