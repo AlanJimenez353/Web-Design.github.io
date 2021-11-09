@@ -1,5 +1,10 @@
 /* -------------------------------------------Body-------------------------------------------*/
-
+main{display: inline;
+align-items: center;}
+.section{
+  display: flex;
+  align-items: center;
+}
 body h2 {
     font-family: "Roboto Mono", monospace;
   }
@@ -294,7 +299,16 @@ h1{
     border-top: 3px solid rgb(0, 221, 221);
   }
   
-  
+  .row-1{
+    padding-left: 160px;
+  }
+  .btn-primary{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .divisor{
+    padding-left: 425px;
+  }
   .navegacionf {
     display: flex;
     align-items: center;
