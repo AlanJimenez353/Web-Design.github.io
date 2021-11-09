@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--Se pone es para que el traductor de google no genere molestias-->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="description"
+      content="A slideshow component for cycling through elements—images or slides of text—like a carousel."
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>  
+          $(function(){
+            $(".toggle").on("click",function(){
+              if($(".item").hasClass("active")){
+                $(".item").removeClass("active");
+              }
+              else{
+                $(".item").addClass("active");
+              }
+
+            })
+          })
+
+    </script>
+  
+</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="">LIGHTS OUT</a></li>
+          <li class="item"><a href="">Home</a></li>
+          <li class="item"><a href="">Sobre Nosotros</a></li>
+          <li class="item"><a href="">Servicios</a></li>
+          <li class="item button"><a href="">Login</a></li>
+          <li class="item button secondary"><a href="">Registrarse</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+      <div class="gridcontainer">
+        <div id="item-Cabecera">
+          <h1>¿ A donde iras hoy ?</h1>
+        </div>
+        <div id="item-Central-1">
+            <img src="imagenes/mute.jpg" alt="mute" class="responsive" /> -->
+          <h2>Mute</h2>
+        </div>
+        <div id="item-Central-2">
+           <img src="imagenes/caset.jpeg " alt="caseta" class="responsive" /> -->
+          <h2>La Caseta</h2>
+        </div>
+        <div id="item-Central-3">
+           <img src="imagenes/destinoarena.jpg" alt="destino" class="responsive" /> -->
+          <h2>Destino Arena</h2>
+        </div>
+        <div id="item-Central-4">
+          <img src="imagenes/gap.jpeg" alt="gap" class="responsive" /> 
+          <br>
+        
+          <h2>Gap club</h2>
+        </div>
+        <div id="item-Central-5">
+           <img src="imagenes/only.png" alt="only" class="responsive" /> -->
+          <h2>Only Club</h2>
+        </div>
+        <div id="item-Central-6">
+           <img src="imagenes/bruto.png" alt="bruto" class="responsive" /> -->
+          <h2>Bruto</h2>
+        </div>
+        <div id="item-Aside-Derecho">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="imagenes/flyer3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/flyer1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/flyer5.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="item-Parrafo">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Androidphoria y de terceros titulares de los mismos que han autorizado debidamente su inclusión.
+
+          En ningún caso se entenderá que se concede licencia alguna o se efectúa renuncia,o parcial de dichos derechos ni se confiere ningún derecho, y en especial, de alteración, explotación, reproducción, distribución o comunicación publica sobre dichos contenido sin la previa autorización expresa de Androidphoria o de los titulares correspondientes.
+          
+          El uso de imágenes,y demás material que sea objeto de protección de los derechos de autor, será exclusivamente para fines educativos e informativos, y cualquier uso distinto como el lucro, reproducción, edición o modificación, será perseguido y sancionado por el respectivo titular de los Derechos de Autor.</div>
+        <div id="item-Aside-Izquierdo">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="imagenes/flyer3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/flyer1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/flyer5.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer class="footerConteiner">
+      <a href="views/contacto.html">Contacto</a>
+      <a href="https://twitter.com/iniciarsesion?lang=en">Twitter</a>
+      <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4">YouTube</a>
+    </footer>
+
+    <!--Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
