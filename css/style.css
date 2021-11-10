@@ -288,16 +288,6 @@ h1{
 /*------------------------------------------Footer-----------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
-.footerConteiner {
-    background-color: rgb(14, 13, 13);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding-left: 270px;
-    height: 20px;
-    border-top: 3px solid rgb(0, 221, 221);
-  }
   
   .row-1{
     padding-left: 160px;
@@ -309,18 +299,34 @@ h1{
   .divisor{
     padding-left: 425px;
   }
-  .navegacionf {
+
+  .container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    align-items: center;
-    align-content: center;
-  }
-  .footerConteiner a {
-    padding: 5px;
-    margin: 100px;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
     text-decoration: none;
-    font-family: "Irish Grover", cursive;
     color: white;
-  }
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
  
 
 /*------------------------------------Media queries----------------------------------------*/
@@ -473,6 +479,7 @@ h2{
 
   #item-Aside-Izquierdo img,
   #item-Aside-Derecho img {
+    padding-top: 10px;
     height: 300px;
     width: 120px;
     max-height: 100%;
