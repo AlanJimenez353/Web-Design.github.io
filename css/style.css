@@ -225,6 +225,7 @@ h1{
 #item-Central-6:hover img,
 #item-Central-4:hover img {
   transform: scale(1.1);
+  
 
 }
   #item-Central-1 h2,
@@ -587,6 +588,7 @@ a {
   .button.secondary a:hover{
     color: #ddd;
   }
+
 }
 
 @media screen and (min-width: 980px) {
@@ -647,6 +649,7 @@ h2{
     max-width: 100%;
     
   }
+
   #item-Parrafo{
     
     font-size:x-small;
@@ -658,6 +661,7 @@ h2{
   h2{
     font-size: x-small;
   }
+  
  }
 @media all and (min-width:768px ){
   /*------NAVBAR------*/
@@ -694,8 +698,7 @@ h2{
     
     height: 100px;
     width: 100px;
-    
-  }
+   }
   h2{
     top: 24px;
   }
@@ -713,6 +716,18 @@ h2{
     max-width: 100%;
     
   }
+
+  #item-Central-1 img,
+  #item-Central-2 img,
+  #item-Central-3 img,
+  #item-Central-5 img,
+  #item-Central-6 img,
+  #item-Central-4 img {
+    
+    height: 100px;
+    width: 100px;
+    top: 15px; 
+   }
 }
 
 
