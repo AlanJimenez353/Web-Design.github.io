@@ -1,7 +1,9 @@
 /* -------------------------------------------Body-------------------------------------------*/
-main{display: inline;
-align-items: center;}
-.section{
+main{
+  display: inline;
+  align-items: center;}
+  
+  .section{
   display: flex;
   align-items: center;
 }
@@ -715,26 +717,3 @@ h2{
 
 
 
-
-
-
-
-
-
-
-/*------------GRID AREA------------
- @media screen and (max-width: 600px) {
-    
-    .gridcontainer{ 
-        grid-template-rows: 0.1fr 1fr 1fr 1fr 0.5fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "#item-Cabecera      #item-Cabecera"
-                             "#item-Central-1     #item-Central-2"
-                             "#item-Central-3     #item-Central-4"
-                             "#item-Central-5     #item-Central-6"
-                             "#item-Parrafo       #item-Parrafo"
-                             "footerConteiner     footerConteiner";
-       
-    }
-  }
-----------------------
