@@ -305,7 +305,7 @@ h1{
   }
 /*------------------------------------------Footer-----------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------------*/
+/*------------------------------------------------º-----------------------------------------*/
   
   .row-1{
     padding-left: 160px;
@@ -590,79 +590,75 @@ a {
   }
 
 }
-
+@media screen and (max-width: 1120px) {
+  /*-----------------Imagenes item centrales-----------*/
+  
+  #item-Central-1 img,
+  #item-Central-2 img,
+  #item-Central-3 img,
+  #item-Central-5 img,
+  #item-Central-6 img,
+  #item-Central-4 img {
+    
+    height: 100px;
+    width: 100px;
+    transition: 0.5s all ease-in-out;
+  } 
+  
+  #item-Central-1:hover img,
+  #item-Central-2:hover img,
+  #item-Central-3:hover img,
+  #item-Central-5:hover img,
+  #item-Central-6:hover img,
+  #item-Central-4:hover img {
+    transform: scale(1.1);
+  
+  }
+  h2{
+    top: 5px;
+  } 
+    .gridcontainer{ 
+      height: 600px;
+    
+     grid-template-rows: 0.1fr   1fr  1fr 0.5fr;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-areas: "#item-Cabecera      #item-Cabecera      #item-Cabecera "
+                          "#item-Central-1     #item-Central-2     #item-Central-3 "
+                          "#item-Central-4     #item-Central-5     #item-Central-6 "
+                          "#item-Parrafo       #item-Parrafo       #item-Parrafo "      
+                          "footerConteiner     footerConteiner     footerConteiner ";
+     }
+     
+     #item-Central-3,#item-Central-4,#item-Aside-Derecho{
+         display: none;
+     }
+     
+    /*imagenes aside*/
+  #item-Aside-Izquierdo img{
+    height: 400px;
+  }
+  
+    #item-Parrafo{
+      
+      font-size:x-small;
+    }
+    .footerConteiner{
+      padding-left: 0px;
+  
+    }
+    h2{
+      font-size: x-small;
+    }
+    
+   }
+  
+  
 @media screen and (min-width: 980px) {
   .contact-info {
     padding-left: 110px;
   }
 }
-@media screen and (max-width: 1120px) {
-/*-----------------Imagenes item centrales-----------*/
 
-#item-Central-1 img,
-#item-Central-2 img,
-#item-Central-3 img,
-#item-Central-5 img,
-#item-Central-6 img,
-#item-Central-4 img {
-  
-  height: 100px;
-  width: 100px;
-  transition: 0.5s all ease-in-out;
-} 
-
-#item-Central-1:hover img,
-#item-Central-2:hover img,
-#item-Central-3:hover img,
-#item-Central-5:hover img,
-#item-Central-6:hover img,
-#item-Central-4:hover img {
-  transform: scale(1.1);
-
-}
-h2{
-  top: 5px;
-} 
-  .gridcontainer{ 
-    height: 600px;
-  
-   grid-template-rows: 0.1fr   1fr  1fr 0.5fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-areas: "#item-Cabecera      #item-Cabecera      #item-Cabecera "
-                        "#item-Central-1     #item-Central-2     #item-Central-3 "
-                        "#item-Central-4     #item-Central-5     #item-Central-6 "
-                        "#item-Parrafo       #item-Parrafo       #item-Parrafo "      
-                        "footerConteiner     footerConteiner     footerConteiner ";
-   }
-   
-   #item-Central-3,#item-Central-4,#item-Aside-Derecho{
-       display: none;
-   }
-   
-  /*imagenes aside*/
-
-  #item-Aside-Izquierdo img,
-  #item-Aside-Derecho img {
-    height: 350px;
-    width: 120px;
-    max-height: 100%;
-    max-width: 100%;
-    
-  }
-
-  #item-Parrafo{
-    
-    font-size:x-small;
-  }
-  .footerConteiner{
-    padding-left: 0px;
-
-  }
-  h2{
-    font-size: x-small;
-  }
-  
- }
 @media all and (min-width:768px ){
   /*------NAVBAR------*/
   .item{
@@ -701,22 +697,11 @@ h2{
    }
   h2{
     top: 24px;
-  }
+  }  
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 780px)
 {
-
-  #item-Aside-Izquierdo img,
-  #item-Aside-Derecho img {
-    padding-top: 10px;
-    height: 300px;
-    width: 120px;
-    max-height: 100%;
-    max-width: 100%;
-    
-  }
-
   #item-Central-1 img,
   #item-Central-2 img,
   #item-Central-3 img,
@@ -728,7 +713,9 @@ h2{
     width: 100px;
     top: 15px; 
    }
+  
+  #item-Aside-Izquierdo img{
+    height: 300px;
+  }
 }
-
-
 
