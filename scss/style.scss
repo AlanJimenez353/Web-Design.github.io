@@ -9,3 +9,59 @@ h2{
     font-family: $font-principal;
     color: $color-principal;
 }
+
+/*navbar*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item {
+  &.button {
+    order: 2;
+  }
+
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+
+  &::before, &::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+  }
+
+  &::before {
+    top: 5px;
+  }
+
+  &::after {
+    top: -5px;
+  }
+}
