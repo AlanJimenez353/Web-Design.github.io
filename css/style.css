@@ -546,50 +546,6 @@ a {
 /*------------------------------------Media queries----------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
-@media all and (min-width: 468px){
-  /*--------------------TABLET NAV-----------------------*/
-  .menu{
-    justify-content:center;
-    
-  }
-  .logo{
-    flex:1;
-  }
-  .item.button{
-    width: auto;
-    order: 1;
-    display: block;
-  }
-  .toggle{
-    order: 2;
-  }
-  .button.secondary{
-    border: 0;
-  }
-  .button a{
-    text-decoration: none;
-    padding: 7px 15px;
-    background: teal;
-    border: 1px solid #5e6666;
-    border-radius: 50em;
-  }
-  .button.secondary a{  
-    background: transparent;
-
-  }
-  .button a:hover{
-    transition: all .25s;
-  }
-
-  .button:not(.secondary) a:hover{
-    background: #006d6d;
-    border-color: #005959;
-  }
-  .button.secondary a:hover{
-    color: #ddd;
-  }
-
-}
 @media screen and (max-width: 1120px) {
   /*-----------------Imagenes item centrales-----------*/
   
@@ -719,3 +675,47 @@ a {
   }
 }
 
+@media all and (min-width: 468px){
+  /*--------------------TABLET NAV-----------------------*/
+  .menu{
+    justify-content:center;
+    
+  }
+  .logo{
+    flex:1;
+  }
+  .item.button{
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle{
+    order: 2;
+  }
+  .button.secondary{
+    border: 0;
+  }
+  .button a{
+    text-decoration: none;
+    padding: 7px 15px;
+    background: teal;
+    border: 1px solid #5e6666;
+    border-radius: 50em;
+  }
+  .button.secondary a{  
+    background: transparent;
+
+  }
+  .button a:hover{
+    transition: all .25s;
+  }
+
+  .button:not(.secondary) a:hover{
+    background: #006d6d;
+    border-color: #005959;
+  }
+  .button.secondary a:hover{
+    color: #ddd;
+  }
+
+}
