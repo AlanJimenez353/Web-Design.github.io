@@ -1,7 +1,7 @@
 ## Sitio Web-Responsive para venta de entradas
 
--Sitio web creado para el curso de Desarrollo web en Coderhouse.
--3º curso de la capacitacion FullStack de Technisys Bootcamp. 
+- curso de Desarrollo web.
+-3º curso de la capacitacion FullStack. 
 
 ## Construido con:
 
